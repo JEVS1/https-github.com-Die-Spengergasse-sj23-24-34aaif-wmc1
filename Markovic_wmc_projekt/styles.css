@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: 'Rammetto One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rammettoone/v18/LhWiMV3HOfMbMetJG3lQDppNO_Gduu8.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+ 
+:root {
+  --white-color: #fff;
+  --button-correct: #5aae76;
+  --button-wrong: #e13e3e;
+  --button-hover: #aaa;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: var(--white-color);
+}
+
+.container {
+  max-width: 300px;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.header {
+  margin: 0;
+  font-family: "Rammetto One", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  height: 100px;
+}
+
+#pokemonImage {
+  height: 200px;
+  max-width: 100%;
+}
+
+
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  height: 52px;
+  margin: 10px;
+  width: calc(50% - 20px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  color: var(--white-color);
+}
+
+button.correct {
+  background-color: var(--button-correct);
+  color: var(--white-color);
+}
+
+button.wrong {
+  background-color: var(--button-wrong);
+  color: var(--white-color);
+}
+
+#loadingContainer {
+  height: 500px;
+}
+
+#points {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#loadingIcon {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 20%;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+#credits{
+    position: absolute;
+    margin: 0;
+  position: absolute;
+  top: 80%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50%;
+}
